@@ -1,0 +1,41 @@
+<body>
+  <div class="container">
+    <header>
+        {{> loginButtons}}
+    </header>
+    <div class="row">
+      <div class="col-md-3 user-list">
+      {{#each users}}
+        <div class="userName">
+          {{ this.username }}
+        </div>
+      {{/each}}
+    </div>
+      <div class="col-md-9 chat-list" id='ppp'>
+        {{ #each chatContent }}
+            {{#each history}}
+            
+            <div class="chatwrapper">
+
+              <div class="{{creatBy}} chatpanel {{#if isOwner creatBy}}right{{/if}}">{{text}}</div>
+            </div>  
+
+             {{/each}}
+        {{/each}} 
+
+      </div>
+    </div>
+
+    <div class="row">
+      {{#if currentUser}}
+       <form class="chatInput col-md-12">
+         <input type="text" name="text" placeholder="Type to say something (oﾟωﾟo) ！ " />
+       </form>
+      {{/if}}
+    </div>
+    
+
+
+  </div>
+</body>
+ 
