@@ -3,19 +3,20 @@
 
 
 
-An instant chatting application.
+###An instant chatting application.
 - user authentication
 - user list
 - auto scroll down
 
 
-##Installation
+###Installation
 
 git clone https://github.com/nergalyang/chattingMeteor.git
 
 npm install
 
-##Start
+###Start
 
 meteor run
 
+After signin ,everyone is in the same room, the app keeps your chat history with each other.
